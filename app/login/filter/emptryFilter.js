@@ -3,4 +3,4 @@
  */
 
  
- function dummy();
+ function dummy(){}
