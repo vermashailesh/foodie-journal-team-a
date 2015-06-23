@@ -1,0 +1,32 @@
+[
+  {
+    "name": "American",
+    "description": "One characterstic of American cooking is the fusion of multiple ethnic or regional approaches into completely new cooking style",
+    "duration": "3 Weeks",
+    "progress" : 10
+  },
+  {
+    "name": "Italian",
+    "description": "One characterstic of American cooking is the fusion of multiple ethnic or regional approaches into completely new cooking style",
+    "duration": "1 Week",
+    "progress" : 0
+  },
+  {
+    "name": "Mexican",
+    "description": "One characterstic of American cooking is the fusion of multiple ethnic or regional approaches into completely new cooking style",
+    "duration": "2 Weeks",
+    "progress": 0
+  },
+  {
+    "name": "Japanese",
+    "description": "One characterstic of American cooking is the fusion of multiple ethnic or regional approaches into completely new cooking style",
+    "duration": "3 Weeks",
+    "progress": 0
+  },
+  {
+    "name": "Korean",
+    "description": "One characterstic of American cooking is the fusion of multiple ethnic or regional approaches into completely new cooking style",
+    "duration": "3 Weeks",
+    "progress" : 0
+  }
+]

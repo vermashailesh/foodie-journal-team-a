@@ -9,4 +9,6 @@ var foodieJurnal=angular.module('foodieJournal.main', [
 foodieJurnal.controller('HomeController',['$scope',function ($scope){
 
         $scope.title = 'Home Page title';
+
+
       }]);

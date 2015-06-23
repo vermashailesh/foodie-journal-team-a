@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: welcomeHomeFont;
+    src: url(../fonts/ProximaNova-Regular.otf);
+}
+
+.welcomeText{
+    font-family: Calibri;
+    font-size: 24px;
+    color: #424242;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
