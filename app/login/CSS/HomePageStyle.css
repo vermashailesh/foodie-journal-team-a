@@ -2,15 +2,20 @@
 {
     background-color: Red;
     width: 700px;
-    height: 25px;
+    height: 30px;
     margin-left: 150px;
 }
-#h1
+#FoodieJournalDiv
 {
     color: white;
-    padding: 10px;
+   padding: 5px;
     margin-left: 10px;
 
 
     font-style: normal;
+}
+#LoginDiv
+{
+    color: white;
+
 }
