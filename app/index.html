@@ -29,12 +29,12 @@
 
 </head>
 
-<body>
+
 
     <!-- Main Container -->
     <div class="container">
         <!--header-->
-
+   <div ng-controller="PublicController">
         <div ng-include="'main/header.html'"></div>
 
         <!-- page container -->
@@ -50,8 +50,11 @@
 
 
         <!-- Footer -->
-        <div ng-include="'main/footer.html'"></div>
 
+            <div ng-if="isFooter" >
+                     <div ng-include="'main/footer.html'"></div>
+            </div>
+       </div>
 
     </div>
 
@@ -69,7 +72,9 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
+  <script src="main/controller/PublicController.js"></script>
   <script src="main/controller/HomeController.js"></script>
+  <script src="culinaris/controller/CulinarisController.js"
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>  
