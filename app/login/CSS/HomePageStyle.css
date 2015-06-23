@@ -10,12 +10,23 @@
     color: white;
    padding: 5px;
     margin-left: 10px;
-
+    width: 100px;
 
     font-style: normal;
 }
 #LoginDiv
 {
-    color: white;
 
+    margin-top: -22px;
+    margin-left: 630px;
+
+}
+#adiv{
+    color: white;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
