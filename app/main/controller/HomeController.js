@@ -8,5 +8,14 @@ var foodieJurnal=angular.module('foodieJournal.main', [
 ]);
 foodieJurnal.controller('HomeController',['$scope',function ($scope){
 
-        $scope.title = 'Home Page title';
-      }]);
+    $scope.title = 'Home Page title';
+    $scope.isFooter=true;
+}]);
+foodieJurnal.controller('FooterController',['$scope','$location',function ($scope,$location){
+    if($location.path() =="/"){
+        $scope.isFooter=true;
+    }else{
+        $scope.isFooter=false;
+    }
+
+}]);
