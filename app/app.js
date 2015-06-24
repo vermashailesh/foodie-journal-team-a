@@ -12,7 +12,7 @@ config(['$routeProvider', function($routeProvider) {
           templateUrl:'main/partials/_home.html',
           controller: 'HomeController'
       })
-      .when('/home',{
+      .when('/welcomehome',{
           templateUrl: 'home/view/home.html',
           controller: 'WelcomeHomeController'
       })

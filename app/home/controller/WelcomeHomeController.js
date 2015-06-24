@@ -14,7 +14,16 @@ angular
             $scope.activities = data
         });
     }])
-    .factory('activityService',activityFactory);
+    .factory('activityService',activityFactory)
+    .directive('activityDetails', function() {
+        return {
+            scope: {
+                activity: '='
+            },
+            restrict: 'CAE', // default behaviour
+            templateUrl: 'home/view/activityTemplate.html'
+        };
+    });
 
 function activityFactory($http){
     this.$inject = ['$http'];
