@@ -19,7 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+<link href="main/CSS/bodyStyle.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,19 +32,35 @@
 <body>
 
     <!-- Main Container -->
-    <div class="container">
+    <div class="container-fluid" >
         <!--header-->
 
-        <div ng-include="'main/header.html'"></div>
+        <div ng-include="'main/header.html'"></div >
+
+        <div class="row">
+        <div  class="fill-screen img-responsive" ng-controller="ChallengeController "
+             style="background-image:url('main/images_VY/picjumbo.com_IMG_4563_Compressed.jpg')">
+            <div id="challengediv">
+                <p id="p1">{{rebels[0].challenge}}</p>
+                <p id="p2">{{rebels[0].description1}}</p>
+                <p id="p3">{{rebels[0].description2}}</p>
+            </div>
+
+        </div>
+
+        </div>
+        </div>
+
+
 
         <!-- page container -->
         <!-- Marketing Icons Section -->
-        <div class="row">
+       <!-- <div class="row">
 
             <div ng-view></div>
 
 
-        </div>
+        </div>-->
         <!-- page container finished -->
 
 
@@ -70,10 +86,18 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
   <script src="main/controller/HomeController.js"></script>
+    <script src="main/controller/ChallengeController.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>  
     <!-- Script to Activate the Carousel -->
+    <script>
+        $(function () {
+            $(window).on("load resize", function () {
+                $(".fill-screen").css("height", window.innerHeight);
+            });
+        });
+    </script>
    
 </body>
 

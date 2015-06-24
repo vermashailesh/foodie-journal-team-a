@@ -1,0 +1,18 @@
+
+.fill-screen{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*
+#p1
+{
+
+    margin-left: 400px;
+}*/
