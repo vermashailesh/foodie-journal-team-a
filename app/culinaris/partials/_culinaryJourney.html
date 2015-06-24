@@ -1,40 +1,34 @@
-<div class="col-lg-12">
-    <a href="#" class="btn btn-default x-btn-default x-btn-selected">American</a>
-	<a href="#" class="btn btn-default">Korean</a>
-	<a href="#" class="btn btn-default">Italian</a>
-	<a href="#" class="btn btn-default">Maxican</a>
-	<a href="#" class="btn btn-default">Japanese</a>
-</div>
-<div class="col-md-4">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
+<div class="row">
+        <div class="col-md-12 x-column-menu">
+                    <a href="#" ng-repeat="c in culinaris" class="btn btn-default x-btn-default {{c.selectedCls}}">{{c.name}}</a>
         </div>
-        <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-            <a href="#" class="btn btn-default">Learn More</a>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-md-6">
+           <circular-progressbar culinary="culinary"></circular-progressbar>
+           <div class="x-culinary-name">{{culinary.name}}</div>
+           <div class="x-culinary-description">{{culinary.description}}</div>
+    </div>
+    <div class="col-md-6 x-culinary-follow">
+        <div>
+              <a  class="btn btn-default x-btn-default ">Duration:{{culinary.duration}}</a>
+        </div>
+        <div>
+            <a  class="btn btn-default x-btn-default x-btn-orange">Follow</a>
         </div>
     </div>
 </div>
-<div class="col-md-4">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
-        </div>
-        <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-            <a href="#" class="btn btn-default">Learn More</a>
-        </div>
-    </div>
-</div>
-<div class="col-md-4">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
-        </div>
-        <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-            <a href="#" class="btn btn-default">Learn More</a>
-        </div>
+<div class="row">
+    <div class="col-md-12">
+            <section ng-repeat="f in culinary.foods" id="accordion">
+                <div>
+                    <input type="checkbox" id="{{f.id}}" />
+                    <label for="{{f.id}}">{{f.title}}</label>
+                    <article>
+                        <p>{{f.description}}</p>
+                    </article>
+                </div>
+            </section>
     </div>
 </div>
