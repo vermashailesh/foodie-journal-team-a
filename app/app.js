@@ -4,7 +4,9 @@
 angular.module('foodieJournal', [
   'ngRoute',
   'foodieJournal.main',
-  'foodieJournal.home'
+  'foodieJournal.home',
+  'foodieJournal.public',
+  'foodieJournal.culinaris'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -15,6 +17,10 @@ config(['$routeProvider', function($routeProvider) {
       .when('/welcomehome',{
           templateUrl: 'home/view/home.html',
           controller: 'WelcomeHomeController'
+      })
+      .when('/culinaris',{
+          templateUrl:'culinaris/partials/_culinaryJourney.html',
+          controller: 'CulinarisController',
       })
       .otherwise({redirectTo: '/'});
 }]);
