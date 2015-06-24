@@ -1,0 +1,82 @@
+
+.journeyText_a{
+    color:#FE5140;
+    font-size: 18px;
+}
+
+
+.journeyText_b{
+    color:#969696;
+    font-size: 18px;
+}
+
+.journeyTextDiv{
+    padding-top: 20px;
+}
+.task{
+    background-color: #fff;
+    padding-top: 7%;
+    padding-bottom: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.divIntruction{
+    color: #4A4A4A;
+    padding-top: 10px;
+    font-size: 16px;
+    'font-weight: bold;
+}
+
+.divDescription{
+    color: #4A4A4A;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.divTiming{
+    background-color:#F8F8F8;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+}
+
+.divSendTextNotification {
+    padding-top: 20px;
+    background-color: #F8F8F8;
+    width: 25%;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding-bottom: 20px;
+}
+
+.divSendTextNotification a{
+
+    color: #94D5FD;
+}
+
+.divPreviousButton{
+    width: 25%;
+    background-color: #F8F8F8;
+    margin-left: 25px;
+    margin-top: 20px;
+    height: 20%;
+}
+
+.divMarkButton{
+    width: 25%;
+    background-color: #ff0000;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.divNextButton{
+    width: 25%;
+    margin-top: 20px;
+    background-color: #F8F8F8;
+}
+
+.divButtons{
+    align-content: space-between;
+}

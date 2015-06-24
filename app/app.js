@@ -6,7 +6,8 @@ angular.module('foodieJournal', [
   'foodieJournal.main',
   'foodieJournal.home',
   'foodieJournal.public',
-  'foodieJournal.culinaris'
+  'foodieJournal.culinaris',
+  'foodieJournal.journey'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -20,7 +21,11 @@ config(['$routeProvider', function($routeProvider) {
       })
       .when('/culinaris',{
           templateUrl:'culinaris/partials/_culinaryJourney.html',
-          controller: 'CulinarisController',
+          controller: 'CulinarisController'
+      })
+      .when('/journey',{
+          templateUrl: 'journey/view/Journey.html',
+          controller: 'JourneyController'
       })
       .otherwise({redirectTo: '/'});
 }]);
