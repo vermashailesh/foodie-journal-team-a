@@ -4,7 +4,7 @@
         angular.module("foodieJournal").controller("ChallengeController",ChallengeController);
         function ChallengeController($scope){
             $scope.rebels
-                = [{ challenge: 'Challenge Yourselfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff',
+                = [{ challenge: 'Challenge Yourself',
             description1: 'FoodieJournal makes it easy for you to embark',
                 description2: ' on a journey to discover new cuisines'
             }
