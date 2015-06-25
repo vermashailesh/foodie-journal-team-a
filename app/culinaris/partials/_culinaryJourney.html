@@ -24,9 +24,24 @@
             <section ng-repeat="f in culinary.foods" id="accordion">
                 <div>
                     <input type="checkbox" id="{{f.id}}" />
-                    <label for="{{f.id}}"><b class="x-circle x-number">&nbsp;{{$index + 1}}&nbsp;</b>&nbsp;&nbsp;{{f.title}}</label>
+                    <label for="{{f.id}}"><a href="javascript:void(0)" class="x-circle x-number">{{$index + 1}}</a><a href="javascript:void(0)" class="x-circle-x x-number"></a>&nbsp;&nbsp;{{f.title}}</label>
                     <article>
-                        <p>{{f.description}}</p>
+                        <div class="row x-jurnal-detail">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3 ">
+                                <map center="{{map.center.latitude+','+map.center.longitude}}" zoom="{{map.zoom}}" >
+                                    <marker position="{{map.center.latitude+','+map.center.longitude}}"></marker>
+                                </map>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </section>

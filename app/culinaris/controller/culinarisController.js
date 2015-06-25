@@ -4,7 +4,8 @@
 
 'use strict';
 var foodieJurnal=angular.module('foodieJournal.culinaris', [
-    'ngRoute'
+    'ngRoute',
+    'ngMap'
 ]);
 foodieJurnal.controller('CulinarisController',['$scope',function ($scope){
     $.support.transition = false;
@@ -47,6 +48,20 @@ foodieJurnal.controller('CulinarisController',['$scope',function ($scope){
                              }
          ];
     $scope.culinary=selectedCulinary();
+    $scope.map = {
+        center: {
+            latitude: 37.79,
+            longitude: -122.4175
+        },
+        zoom: 13
+    };
+    $scope.marker = {
+        idKey: 123,
+        coords: {
+            latitude: 37.7836377,
+            longitude: -122.4132168
+        }
+    };
     function selectedCulinary(){
         return {
             "name": "American",
