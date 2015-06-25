@@ -93,7 +93,8 @@ header.carousel .carousel-inner {
     color:#ffffff;
 }
 .x-caret{
-	margin: 0 0 0 -27px !important;
+	margin: 18px 0 0 -28px !important;
+	height: 44px;
 }
 .navbar-toggle {
     position: relative;
@@ -342,18 +343,19 @@ body {
     border: 1px solid #eeeeee;
 }
 #accordion label:hover {
-    background: #ccc;
+     background-color: #EBEDEC;
+     color:#000;
 }
 
 #accordion input:checked + label {
-    background: #ccc;
+    background: #fff;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    color: white;
+    color: black;
     margin-bottom: 0;
 }
 #accordion article {
-    background: #f7f7f7;
+    background: #fff;
     height:0px;
     overflow:hidden;
     z-index:10;
@@ -368,4 +370,26 @@ body {
     border-bottom-right-radius: .25em;
     height: auto;
     margin-bottom: .125em;
+}
+.x-hr{
+  border-bottom:1px solid #eeeeee;
+}
+.x-row{
+  background:#fff;
+  padding:8px;
+}
+.x-circle{
+    width: 15px;
+	height: 15px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	background:#000;
+	color:#fff;
+}
+.x-number{
+  margin-left:10px;
+}
+.x-row-accordian{
+  margin:10px;
 }
