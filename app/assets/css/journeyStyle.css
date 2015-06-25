@@ -12,10 +12,11 @@
 
 .journeyTextDiv{
     padding-top: 20px;
+    margin-top: 50px;
 }
 .task{
     background-color: #fff;
-    padding-top: 7%;
+    'padding-top: 1%;
     padding-bottom: 2%;
     padding-right: 3%;
     padding-left: 3%;
@@ -42,41 +43,60 @@
     padding-bottom: 10px ;
 }
 
-.divSendTextNotification {
+.divSendTextNotification,.divSendTextNotification:hover{
     padding-top: 20px;
     background-color: #F8F8F8;
     width: 25%;
     text-align: center;
     margin: 10px 0 0 0;
     padding-bottom: 20px;
-}
-
-.divSendTextNotification a{
-
     color: #94D5FD;
+    border: 0;
 }
 
-.divPreviousButton{
-    width: 25%;
-    background-color: #F8F8F8;
-    margin-left: 25px;
-    margin-top: 20px;
-    height: 20%;
-}
-
-.divMarkButton{
-    width: 25%;
-    background-color: #ff0000;
+.previousStyle,.previousStyle:hover{
+    background-color: #555555;
     color: #fff;
-    margin-top: 20px;
+    font-size: 16px;
+    height: 50px;
+    border: 0;
+    width: 50%;
+    padding-top: 15px;
 }
 
-.divNextButton{
-    width: 25%;
-    margin-top: 20px;
-    background-color: #F8F8F8;
+.markStyle,.markStyle:hover{
+    background-color: #FE5140;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    border: 0;
+    width: 100%;
+    padding-top: 15px;
 }
 
-.divButtons{
-    align-content: space-between;
+.nextStyle,.nextStyle:hover{
+    background-color: #F7F7F7;
+    color: #C6C6C6;
+    font-size: 16px;
+    height: 50px;
+    border: 0;
+    width: 50%;
+    padding-top: 15px;
+    float: right
+}
+
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px #C4C4C4;
+    -moz-box-shadow: 0 10px 6px -6px #C4C4C4;
+    box-shadow: 0 10px 6px -6px #C4C4C4;
+}
+
+.myBadge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 6px 13px 6px 13px;
+    line-height: 1;
+    color: #fff;
+    background-color: #4A4A4A;
+    border-radius: 20px;
 }
