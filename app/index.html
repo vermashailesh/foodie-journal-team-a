@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="assets/css/modern-business.css" rel="stylesheet">
-
+    <link href="main/CSS/bodyStyle.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -26,48 +26,75 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 
 
-    <!-- Main Container -->
-    <div class="container">
-        <!--header-->
-   <div ng-controller="PublicController">
+<!-- Main Container -->
+<div style="width: 100%;padding: 0px;">
+    <!--header-->
+    <div ng-controller="PublicController">
         <div ng-include="'main/header.html'"></div>
 
         <!-- page container -->
+        <!-- Body Portion Startssss-->
+
+
+
+
+
+        <!-- Body Portion Endsss-->
         <!-- Marketing Icons Section -->
-        
-            <div ng-view></div>
+
+        <div ng-view></div>
 
 
-       
+
         <!-- page container finished -->
 
 
 
         <!-- Footer -->
 
-            <div ng-if="isFooter" >
-                     <div ng-include="'main/footer.html'"></div>
-            </div>
-       </div>
-
+        <div ng-if="isFooter" >
+            <div ng-include="'main/footer.html'"></div>
+        </div>
     </div>
 
+</div>
 
-    <!-- jQuery -->
+
+<!-- jQuery -->
 
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="site.js"></script>
+<script src="main/controller/PublicController.js"></script>
+<script src="main/controller/HomeController.js"></script>
+<script src="culinaris/controller/CulinarisController.js"></script>
+
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+
+
+<!-- Script to Activate the Carousel -->
+<!--<script>
+
+<<<<<<< HEAD
      <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
@@ -84,6 +111,7 @@
   <script src="components/version/interpolate-filter.js"></script>  
 
    
+
 </body>
 
 </html>

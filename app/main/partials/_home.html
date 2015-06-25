@@ -1,9 +1,68 @@
-<div class="col-lg-12">
-    <h1 class="page-header">
-        {{title}}
-    </h1>
+<div class="col-lg-12" style="padding: 0px; width: 100%">
+    <div  class="fill-screen img-responsive "
+          style="background-image:url('main/images_VY/picjumbo.com_IMG_4563_Compressed.jpg');padding: 0px;">
+        <!-- Carousel Div  starts-->
+        <div id="corouseldiv" class="carousel slide" data-interval="500">
+            <div id="content-carousel" class="carousel-inner" >
+                <div id="challengediv" class="item active">
+                    <p id="challenge">{{rebels[0].challenge}}</p>
+                    <p id="p2" >{{rebels[0].description1}}</p>
+                    <p id="p3" >{{rebels[0].description2}}</p>
+                    <button id ="getstartedbutton" type="button" class="btn">Get Started</button>
+                </div>
+                <div class="item">
+                    Hello!!
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Div  Ends-->
+        <div id="discoverMore">
+               <p id="p4">Discover More &nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></p>
+        </div>
+
+    </div>
 </div>
-<div class="col-md-4">
+<div class="col-lg-12"  id="newConceptdiv" style="padding: 0px; width: 100%">
+    <div class="col-md-4" id ="circlecontainerdiv1" style="padding: 0px;">
+            <div class ="circlediv">
+                <img src='{{rebels[0].imageUrl2}}' class="forkimage">
+            </div>
+            <div id ="circlediv1Text1">
+                <p class="p5">{{rebels[0].imageDescription1}}</p>
+               <p class="p6" >{{rebels[0].imageDescription2}}</p>
+                <p class="p7">{{rebels[0].imageDescription3}}</p>
+            </div>
+
+        </div>
+    <div class="col-md-4" id ="circlecontainerdiv2" style="padding: 0px;">
+        <div class ="circlediv">
+            <img src='{{rebels[0].imageUrl3}}' class="forkimage">
+        </div>
+        <div id ="circlediv1Text2">
+            <p class="p5">{{rebels[0].imageDescription4}}</p>
+            <p class="p6" >{{rebels[0].imageDescription5}}</p>
+            <p class="p7">{{rebels[0].imageDescription6}}</p>
+        </div>
+
+    </div>
+    <div class="col-md-4" id ="circlecontainerdiv3" style="padding: 0px;">
+        <div class ="circlediv">
+            <img src='{{rebels[0].imageUrl4}}' class="forkimage">
+        </div>
+        <div id ="circlediv1Text3">
+            <p class="p5">{{rebels[0].imageDescription7}}</p>
+            <p class="p6" >{{rebels[0].imageDescription8}}</p>
+            <p class="p7">{{rebels[0].imageDescription9}}</p>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!--<div class="col-md-4" style="padding: 0px;">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
@@ -13,8 +72,8 @@
             <a href="#" class="btn btn-default">Learn More</a>
         </div>
     </div>
-</div>
-<div class="col-md-4">
+</div>-->
+<!--<div class="col-md-4" style="padding: 0px;">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
@@ -24,8 +83,9 @@
             <a href="#" class="btn btn-default">Learn More</a>
         </div>
     </div>
-</div>
-<div class="col-md-4">
+</div>-->
+<!--
+<div class="col-md-4" style="padding: 0px;">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
@@ -35,4 +95,4 @@
             <a href="#" class="btn btn-default">Learn More</a>
         </div>
     </div>
-</div>
+</div>-->
