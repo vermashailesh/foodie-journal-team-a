@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row x-row">
         <div class="col-md-12 x-column-menu">
                     <a href="#" ng-repeat="c in culinaris" class="btn btn-default x-btn-default {{c.selectedCls}}">{{c.name}}</a>
         </div>
 </div>
-<hr/>
-<div class="row">
+<div class="x-hr row x-row"></div>
+<div class="row x-row">
     <div class="col-md-6">
            <circular-progressbar culinary="culinary"></circular-progressbar>
            <div class="x-culinary-name">{{culinary.name}}</div>
@@ -19,12 +19,12 @@
         </div>
     </div>
 </div>
-<div class="row">
+<div class="row x-row-accordian" >
     <div class="col-md-12">
             <section ng-repeat="f in culinary.foods" id="accordion">
                 <div>
                     <input type="checkbox" id="{{f.id}}" />
-                    <label for="{{f.id}}">{{f.title}}</label>
+                    <label for="{{f.id}}"><b class="x-circle x-number">&nbsp;{{$index + 1}}&nbsp;</b>&nbsp;&nbsp;{{f.title}}</label>
                     <article>
                         <p>{{f.description}}</p>
                     </article>
