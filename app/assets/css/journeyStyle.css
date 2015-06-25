@@ -43,7 +43,7 @@
     padding-bottom: 10px ;
 }
 
-.divSendTextNotification,.divSendTextNotification:hover{
+.divSendTextNotification,.divSendTextNotification:hover,.divSendTextNotification:focus{
     padding-top: 20px;
     background-color: #F8F8F8;
     width: 25%;
@@ -54,7 +54,7 @@
     border: 0;
 }
 
-.previousStyle,.previousStyle:hover{
+.previousStyle,.previousStyle:hover,.previousStyle:focus{
     background-color: #555555;
     color: #fff;
     font-size: 16px;
@@ -64,7 +64,7 @@
     padding-top: 15px;
 }
 
-.markStyle,.markStyle:hover{
+.markStyle,.markStyle:hover,.markStyle:focus{
     background-color: #FE5140;
     color: #fff;
     font-size: 16px;
@@ -74,7 +74,7 @@
     padding-top: 15px;
 }
 
-.nextStyle,.nextStyle:hover{
+.nextStyle,.nextStyle:hover,.nextStyle:focus{
     background-color: #F7F7F7;
     color: #C6C6C6;
     font-size: 16px;
