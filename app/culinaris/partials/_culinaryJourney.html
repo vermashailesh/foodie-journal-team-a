@@ -1,7 +1,30 @@
 <div class="row x-row">
-        <div class="col-md-12 x-column-menu">
-                    <a href="#" ng-repeat="c in culinaris" class="btn btn-default x-btn-default {{c.selectedCls}}">{{c.name}}</a>
+        <div class="col-md-6 x-column-menu x-btn-con-show-one">
+                    <a href="javascript:void(0);" ng-repeat="c in culinaris" class="btn btn-default x-btn-default {{c.selectedCls}}">{{c.name}}</a>
         </div>
+
+       <div class="col-md-6 btn-group x-column-menu x-btn-con-show">
+            <a class="btn x-btn-orange btn-default x-border-redius" href="javascript:void(0);">American</a>
+            <a class="btn btn-default x-btn-orange x-border-redius dropdown-toggle" aria-expanded="false" href="javascript:void(0);" data-toggle="dropdown"><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li ng-repeat="c in culinaris"><a href="javascript:void(0);" >{{c.name}}</a></li>
+            </ul>
+       </div>
+    <div class="col-md-6 btn-group ">
+        <div class="btn-group x-float-right">
+            <a class="btn btn-default x-border-2-redius dropdown-toggle" aria-expanded="false" href="javascript:void(0);" data-toggle="dropdown">
+                Most Recent
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li ><a href="javascript:void(0);" >Most Recent</a></li>
+                <li ><a href="javascript:void(0);" >Highest Rated</a></li>
+                <li ><a href="javascript:void(0);" >Top Reviewed</a></li>
+            </ul>
+        </div>
+    </div>
+
+
 </div>
 <div class="x-hr row x-row"></div>
 <div class="row x-row">
@@ -23,7 +46,7 @@
     <div class="col-md-12">
             <section ng-repeat="f in culinary.foods" id="accordion">
                 <div>
-                    <input type="checkbox" id="{{f.id}}" />
+                    <input type="checkbox" id="{{f.id}}"  ng-click="foodSelect(f.id)"/>
                     <label for="{{f.id}}"><a href="javascript:void(0)" class="x-circle x-number">{{$index + 1}}</a><a href="javascript:void(0)" class="x-circle-x x-number"></a>&nbsp;&nbsp;{{f.title}}</label>
                     <article>
                         <div class="row x-jurnal-detail">
