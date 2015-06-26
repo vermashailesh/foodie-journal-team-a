@@ -46,7 +46,7 @@
     <div class="col-md-12">
             <section ng-repeat="f in culinary.foods" id="accordion">
                 <div>
-                    <input type="checkbox" id="{{f.id}}" />
+                    <input type="checkbox" id="{{f.id}}"  ng-click="foodSelect(f.id)"/>
                     <label for="{{f.id}}"><a href="javascript:void(0)" class="x-circle x-number">{{$index + 1}}</a><a href="javascript:void(0)" class="x-circle-x x-number"></a>&nbsp;&nbsp;{{f.title}}</label>
                     <article>
                         <div class="row x-jurnal-detail">
