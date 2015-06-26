@@ -84,7 +84,7 @@ header.carousel .carousel-inner {
 	margin-top: -3px !important;
 }
 .x-btn-default{
-  margin:10px !important;
+  margin:8px !important;
   border-radius: 0px;
 }
 .x-btn-selected{
@@ -93,8 +93,9 @@ header.carousel .carousel-inner {
     color:#ffffff;
 }
 .x-caret{
-	margin: 18px 0 0 -28px !important;
-	height: 44px;
+    margin: 0px 0 0 83px !important;
+    height: 44px;
+    position: absolute !important;
 }
 .navbar-toggle {
     position: relative;
@@ -402,8 +403,85 @@ body {
   margin-left:10px;
 }
 .x-jurnal-detail{
-    height:200px !important;
-}
+ }
 .x-row-accordian{
   margin:10px;
+}
+.x-google-map map{
+	height: 185px !important;
+	padding: 10px !important;
+}
+.x-restorent-name{
+   font-size: 16px;
+	font-weight: bold;
+	color: #999;
+}
+.x-restorent-review{
+  margin: 0px 0px 1px 2px;
+}
+.x-restorent{
+   padding: 7px 0 10px 34px;
+}
+.x-restorent-contant{
+	background: #F8F8F8;
+	font-size: 14px;
+	margin: 12px 0 0px 0px;
+	padding: 16px;
+ }
+ .x-restorent-status{
+   color:#449E50;
+ }
+ .x-restorent-hr{
+      border-bottom: 1px solid #999;
+	   margin: 10px 0 12px 0px;
+ }
+ .x-restorent-photo{
+   padding:6px 0 0 23px;
+ }
+ .x-restorent-img{
+     width: 188px;
+     height: 161px;
+ }
+ .x-phot-inner-text{
+	position: absolute;
+	top: 77px;
+	left: 88px;
+	color: #fff;
+ }
+@media all and (max-width: 665px) {
+    .x-btn-con-show{
+        display:block;
+    }
+    .x-btn-con-show-one{
+        display:none;
+    }
+    .x-border-redius{
+        border-radius: 0 !important;
+        background-color: #ff0000 !important;
+        border-color: #ff0000 !important;
+        color:#ffffff !important;
+    }
+    .x-float-right{
+        float: left !important;
+        margin: 0px;
+    }
+}
+.x-border-redius{
+    border-radius: 0 !important;
+}
+.x-border-2-redius{
+    border-radius: 0 !important;
+}
+
+@media all and (min-width: 666px) {
+    .x-btn-con-show{
+        display:none;
+    }
+    .x-btn-con-show-one{
+        display:block;
+    }
+    .x-float-right{
+        float: right !important;
+        margin: 37px 38px 0px 0px;
+    }
 }

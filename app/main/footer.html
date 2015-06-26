@@ -1,9 +1,13 @@
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    Copyright &copy; Your Website 2014
-                </div>
+        <footer ng-controller="FooterController">
+
+                <div class="col-sm-12">
+                    <div id="footer-div">
+                        <p id="developed-by">{{footer[0].footerDescription1}}</p>
+                         <p id="aowp-p">
+                             <img id="aowp-image" src='{{footer[0].footerImageUrl1}}'/>
+                             <img id="accenture-image" src='{{footer[0].footerImageUrl2}}'/></p>
+                    </div>
             </div>
         </footer>
