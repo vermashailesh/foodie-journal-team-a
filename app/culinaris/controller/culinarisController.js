@@ -14,7 +14,7 @@ foodieJurnal.controller('CulinarisController',['$scope',function ($scope){
                                  "name": "American",
                                  "description": "One characterstic of American cooking is the fusion of multiple ethnic or regional approaches into completely new cooking style",
                                  "duration": "3 Weeks",
-                                 "progress" : 10,
+                                 "progress" : 0,
                                  "selectedCls":"x-btn-selected",
                                  "imagePath":"assets/images/slices/[FoodieChallenge]Asset (25).png"
                              },
@@ -47,6 +47,17 @@ foodieJurnal.controller('CulinarisController',['$scope',function ($scope){
                                  "imagePath":"assets/images/slices/[FoodieChallenge]Asset (3).png"
                              }
          ];
+    $scope.foodSelect=function(id){
+       if(document.getElementById(id).checked==true){
+           if($scope.culinary.progress !=100){
+               $scope.culinary.progress=$scope.culinary.progress+10;
+           }
+       }else{
+           if($scope.culinary.progress !=0){
+               $scope.culinary.progress=$scope.culinary.progress-10;
+           }
+       }
+    };
     $scope.culinary=selectedCulinary();
     $scope.map = {
         center: {
@@ -67,7 +78,7 @@ foodieJurnal.controller('CulinarisController',['$scope',function ($scope){
     "name": "American",
     "description": "One characterstic of American cooking is the fusion of multiple ethnic or regional approaches into completely new cooking style",
     "duration": "3 Weeks",
-    "progress": 10,
+    "progress": 0,
     "foods": [
         {
             "id": "check-1",

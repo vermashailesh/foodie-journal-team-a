@@ -485,3 +485,9 @@ body {
         margin: 37px 38px 0px 0px;
     }
 }
+#bs-example-navbar-collapse-1{
+    width:98%;
+}
+.x-body-style{
+          padding: 2%;
+}
