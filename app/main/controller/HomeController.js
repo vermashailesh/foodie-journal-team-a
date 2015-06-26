@@ -25,10 +25,13 @@ foodieJurnal.controller('HomeController',['$scope',function ($scope){
         imageUrl4: 'main/images_VY/FoodieChallengeAsset3.png',
         imageDescription7: 'Complete Challenges and',
         imageDescription8: 'track your progress against',
-        imageDescription9: 'your selected cuisine journey'
+        imageDescription9: 'your selected cuisine journey',
 
     }
     ];
+
+    console.log($scope.rebels[0].footerImageUrl1);
+    console.log($scope.rebels[0].imageDescription8);
 }]);
 foodieJurnal.controller('FooterController',['$scope','$location',function ($scope,$location){
     if($location.path() =="/"){
@@ -36,5 +39,11 @@ foodieJurnal.controller('FooterController',['$scope','$location',function ($scop
     }else{
         $scope.isFooter=false;
     }
-
+    $scope.footer
+        = [{
+        footerDescription1: 'Developed By',
+        footerImageUrl1: '../app/assets/images/%5BFoodieChallenge%5DAsset%20(19).png',
+        footerImageUrl2: '../app/assets/images/%5BFoodieChallenge%5DAsset%20(20).png'
+    }
+    ];
 }]);

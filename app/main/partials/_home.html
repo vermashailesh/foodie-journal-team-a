@@ -1,25 +1,30 @@
+
 <div class="col-lg-12" style="padding: 0px; width: 100%">
     <div  class="fill-screen img-responsive "
           style="background-image:url('main/images_VY/picjumbo.com_IMG_4563_Compressed.jpg');padding: 0px;">
         <!-- Carousel Div  starts-->
-        <div id="corouseldiv" class="carousel slide" data-interval="500">
-            <div id="content-carousel" class="carousel-inner" >
+        <div id="corouseldiv" class="carousel slide" data-interval="5000">
+
+            <div id="content-carousel" class="carousel-inner">
                 <div id="challengediv" class="item active">
-                    <p id="challenge">{{rebels[0].challenge}}</p>
-                    <p id="p2" >{{rebels[0].description1}}</p>
-                    <p id="p3" >{{rebels[0].description2}}</p>
-                    <button id ="getstartedbutton" type="button" class="btn">Get Started</button>
+                    <p class="challenge">{{rebels[0].challenge}}</p>
+                    <p class="challenge-description1" >{{rebels[0].description1}}</p>
+                    <p class="challenge-description2" >{{rebels[0].description2}}</p>
+
                 </div>
                 <div class="item">
-                    Hello!!
+                    <p class="challenge">{{rebels[0].challenge}}</p>
+                    <p class="challenge-description1" >{{rebels[0].description1}}</p>
+                    <p class="challenge-description2" >{{rebels[0].description2}}</p>
                 </div>
             </div>
 
         </div>
-
         <!-- Carousel Div  Ends-->
+        <button class="getstartedbutton" type="button" class="btn">Get Started</button>
+        <!-- Discover More Div -->
         <div id="discoverMore">
-               <p id="p4">Discover More &nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></p>
+            <p id="p4">Discover More &nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></p>
         </div>
 
     </div>
@@ -96,3 +101,9 @@
         </div>
     </div>
 </div>-->
+
+<script>
+    $(".carousel").carousel({
+       interval:5000
+    });
+</script>
