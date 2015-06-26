@@ -1,0 +1,241 @@
+
+.fill-screen{
+    height: 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    min-width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .challenge {
+        position: absolute;
+        font-size:30px;
+        margin-top: 50px;
+        margin-left: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .challenge {
+        position: absolute;
+        font-size:25px;
+        margin-top: 50px;
+        margin-left: 50px;
+
+    }
+}
+@media screen and (max-width: 200px) {
+    .challenge {
+        position: absolute;
+        font-size:20px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .challenge-description1 {
+        position: absolute;
+        font-size:17px;
+        margin-top: 100px;
+        margin-left: 350px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .challenge-description1 {
+        position: absolute;
+        font-size:13px;
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 200px) {
+    .challenge-description1 {
+        position: absolute;
+        font-size:10px;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .challenge-description2 {
+        position: absolute;
+        font-size:17px;
+        margin-top: 120px;
+        margin-left: 370px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .challenge-description2 {
+        position: absolute;
+        font-size:13px;
+        margin-top: 120px;
+        margin-left: 45px;
+    }
+}
+@media screen and (max-width: 200px) {
+    .challenge-description2 {
+        position: absolute;
+        font-size:10px;
+        margin-top: 120px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .getstartedbutton
+    {
+        color: white;
+        background-color: Red;
+        margin-top: 180px;
+        margin-left: 450px;
+        width: 150px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .getstartedbutton
+    {
+        color: white;
+        background-color: Red;
+        margin-top: 180px;
+        margin-left: 90px;
+    }
+}
+@media screen and (max-width: 200px) {
+    .getstartedbutton
+    {
+        color: white;
+        background-color: Red;
+        margin-top: 180px;
+        margin-left: 60px;
+    }
+}
+
+
+#discoverMore
+    {
+
+        height: 30px;
+    margin-top: 160px;
+
+    text-align: center;
+        color: white;
+        background-color: black;
+        opacity: 0.6;
+    }
+#discoverMoreText{
+    position: relative;
+}
+
+#newConceptdiv
+{
+    position: relative;
+    height:400px;
+   /* background-size: cover;
+    background-position: center;*/
+}
+#newConceptdiv::after{
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    height:400px;
+    background-image:url("../images_VY/picjumbo.com_IMG_0895.jpg");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.1;
+
+
+}
+@media (max-width: 768px)  {
+    #newConceptdiv::after{
+          height: 1000px;
+      }
+    #newConceptdiv{
+        height: 1000px;
+    }
+
+}
+    .circlediv
+    {
+
+        margin-top: 100px;
+        margin-left: 120px;
+        width: 100px;
+        height: 100px;
+        background: red;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+
+    }
+.forkimage
+{
+
+    margin-top: 34px;
+    margin-left: 34px;
+}
+.p5{
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial;
+    font-style: normal;
+
+}
+.p6{
+    text-align: center;
+    margin-top: -5px;
+    font-family: Arial;
+    font-style: normal;
+
+}
+.p7{
+    text-align: center;
+    margin-top: -5px;
+    font-family: Arial;
+    font-style: normal;
+
+}
+#footer-div
+{
+    text-align: center;
+    margin-top: -30px;
+}
+
+#aowp-image
+{
+    margin-top: 5px;
+}
+#accenture-image
+{
+    margin-top: 0px;
+    margin-left : 20px;
+}
+.carousel-inner {
+    overflow: visible;
+    width: 100%;
+}
+
+#corouseldiv{
+    width: 100%;
+}
+
+
+
+
+
