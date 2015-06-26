@@ -143,3 +143,12 @@
     color: white;
     width:0%;
 }
+
+.spanTemplateWelcomeHome {
+    position: absolute;
+    top: 5px;
+    'z-index: 2;
+    color: #fff;
+    text-align: center;
+    padding-top: 22%;
+}

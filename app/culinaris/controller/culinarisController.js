@@ -4,7 +4,8 @@
 
 'use strict';
 var foodieJurnal=angular.module('foodieJournal.culinaris', [
-    'ngRoute'
+    'ngRoute',
+    'ngMap'
 ]);
 foodieJurnal.controller('CulinarisController',['$scope',function ($scope){
     $.support.transition = false;
@@ -47,41 +48,196 @@ foodieJurnal.controller('CulinarisController',['$scope',function ($scope){
                              }
          ];
     $scope.culinary=selectedCulinary();
-    function selectedCulinary(){
-        return {
-            "name": "American",
-            "description": "One characterstic of American cooking is the fusion of multiple ethnic or regional approaches into completely new cooking style",
-            "duration": "3 Weeks",
-            "progress" : 10,
-            "foods":[
-                {
-                    "id":"check-1",
-                    "title":"All-American Bacon Chees Burger",
-                    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odit, quia hic ipsam laboriosam dignissimos suscipit eligendi! Aspernatur, ad, suscipit officiis repellat consequuntur quod quibusdam sint nobis magnam voluptates veritatis?"
-                },{
-                    "id":"check-2",
-                    "title":"Treditional Americal Desserts",
-                    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odit, quia hic ipsam laboriosam dignissimos suscipit eligendi! Aspernatur, ad, suscipit officiis repellat consequuntur quod quibusdam sint nobis magnam voluptates veritatis?"
-                },
-                {
-                    "id":"check-3",
-                    "title":"San Francisco Sourdough Bread",
-                    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odit, quia hic ipsam laboriosam dignissimos suscipit eligendi! Aspernatur, ad, suscipit officiis repellat consequuntur quod quibusdam sint nobis magnam voluptates veritatis?"
-                },
-                {
-                    "id":"check-4",
-                    "title":"New York Style Buffalo Wings",
-                    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odit, quia hic ipsam laboriosam dignissimos suscipit eligendi! Aspernatur, ad, suscipit officiis repellat consequuntur quod quibusdam sint nobis magnam voluptates veritatis?"
-                },
-                {
-                    "id":"check-5",
-                    "title":"Smoked Barbecue Ribs",
-                    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odit, quia hic ipsam laboriosam dignissimos suscipit eligendi! Aspernatur, ad, suscipit officiis repellat consequuntur quod quibusdam sint nobis magnam voluptates veritatis?"
-                }
-            ],
-            "selectedCls":"x-btn-selected",
-            "imagePath":"assets/images/slices/[FoodieChallenge]Asset (25).png"
+    $scope.map = {
+        center: {
+            latitude: 37.79,
+            longitude: -122.4175
+        },
+        zoom: 13
+    };
+    $scope.marker = {
+        idKey: 123,
+        coords: {
+            latitude: 37.7836377,
+            longitude: -122.4132168
         }
+    };
+    function selectedCulinary(){
+        return{
+    "name": "American",
+    "description": "One characterstic of American cooking is the fusion of multiple ethnic or regional approaches into completely new cooking style",
+    "duration": "3 Weeks",
+    "progress": 10,
+    "foods": [
+        {
+            "id": "check-1",
+            "title": "All-American Bacon Chees Burger",
+            "restorents": {
+                "name": "Frankie's",
+                "review_rate": 4,
+                "price": "$$",
+                "food_speciality": "Burgers",
+                "state": "SanFrancisco",
+                "street": "66MinSt",
+                "zip_code": "CA94103",
+				"reviews": "1256",
+                "contacts": {
+                    "oprational_hour": "8:00 am - 9.00 pm",
+                    "open_status": "Opennow",
+                    "phone_code": "510",
+                    "phone_number": "653-3394",
+                    
+                    "website": "frenkiesburgers.com"
+                },
+                "photos": {
+                    "thumb_img": "assets/images/slices/Asset17.png",
+                    "no_of_photo_uploaded": "25"
+                },
+                "map": {
+                    "center": {
+                        "latitude": "37.79",
+                        "longitude": "-122.4175"
+                    }
+                }
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odit, quia hic ipsam laboriosam dignissimos suscipit eligendi! Aspernatur, ad, suscipit officiis repellat consequuntur quod quibusdam sint nobis magnam voluptates veritatis?"
+        },
+        {
+            "id": "check-2",
+            "title": "Treditional Americal Desserts",
+            "restorents": {
+                "name": "Frankie's",
+                "review_rate": 4,
+                "price": "$$",
+				"reviews": "1256",
+                "food_speciality": "Burgers",
+                "state": "SanFrancisco",
+                "street": "66MinSt",
+                "zip_code": "CA94103",
+                "contacts": {
+                    "oprational_hour": "8:00 am - 9.00 pm",
+                    "open_status": "Opennow",
+                    "phone_code": "510",
+                    "phone_number": "653-3394",
+                    "reviews": "1256",
+                    "website": "frenkiesburgers.com"
+                },
+                "photos": {
+                    "thumb_img": "assets/images/slices/Asset17.png",
+                    "no_of_photo_uploaded": "25"
+                },
+                "map": {
+                    "center": {
+                        "latitude": "37.79",
+                        "longitude": "-122.4175"
+                    }
+                }
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odit, quia hic ipsam laboriosam dignissimos suscipit eligendi! Aspernatur, ad, suscipit officiis repellat consequuntur quod quibusdam sint nobis magnam voluptates veritatis?"
+        },
+        {
+            "id": "check-3",
+            "title": "San Francisco Sourdough Bread",
+            "restorents": {
+                "name": "Frankie's",
+                "review_rate": 4,
+                "price": "$$",
+				"reviews": "1256",
+                "food_speciality": "Burgers",
+                "state": "SanFrancisco",
+                "street": "66MinSt",
+                "zip_code": "CA94103",
+                "contacts": {
+                    "oprational_hour": "8:00 am - 9.00 pm",
+                    "open_status": "Opennow",
+                    "phone_code": "510",
+                    "phone_number": "653-3394",
+                    "reviews": "1256",
+                    "website": "frenkiesburgers.com"
+                },
+                "photos": {
+                    "thumb_img": "assets/images/slices/Asset17.png",
+                    "no_of_photo_uploaded": "25"
+                },
+                "map": {
+                    "center": {
+                        "latitude": "37.79",
+                        "longitude": "-122.4175"
+                    }
+                }
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odit, quia hic ipsam laboriosam dignissimos suscipit eligendi! Aspernatur, ad, suscipit officiis repellat consequuntur quod quibusdam sint nobis magnam voluptates veritatis?"
+        },
+        {
+            "id": "check-4",
+            "title": "New York Style Buffalo Wings",
+            "restorents": {
+                "name": "Frankie's",
+                "review_rate": 4,
+                "price": "$$",
+				"reviews": "1256",
+                "food_speciality": "Burgers",
+                "state": "SanFrancisco",
+                "street": "66MinSt",
+                "zip_code": "CA94103",
+                "contacts": {
+                    "oprational_hour": "8:00 am - 9.00 pm",
+                    "open_status": "Opennow",
+                    "phone_code": "510",
+                    "phone_number": "653-3394",
+                    "reviews": "1256",
+                    "website": "frenkiesburgers.com"
+                },
+                "photos": {
+                    "thumb_img": "assets/images/slices/Asset17.png",
+                    "no_of_photo_uploaded": "25"
+                },
+                "map": {
+                    "center": {
+                        "latitude": "37.79",
+                        "longitude": "-122.4175"
+                    }
+                }
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odit, quia hic ipsam laboriosam dignissimos suscipit eligendi! Aspernatur, ad, suscipit officiis repellat consequuntur quod quibusdam sint nobis magnam voluptates veritatis?"
+        },
+        {
+            "id": "check-5",
+            "title": "Smoked Barbecue Ribs",
+            "restorents": {
+                "name": "Frankie's",
+                "review_rate": 4,
+                "price": "$$",
+                "food_speciality": "Burgers",
+                "state": "SanFrancisco",
+                "street": "66MinSt",
+				"reviews": "1256",
+                "zip_code": "CA94103",
+                "contacts": {
+                    "oprational_hour": "8:00 am - 9.00 pm",
+                    "open_status": "Opennow",
+                    "phone_code": "510",
+                    "phone_number": "653-3394",
+                    "reviews": "1256",
+                    "website": "frenkiesburgers.com"
+                },
+                "photos": {
+                    "thumb_img": "assets/images/slices/Asset17.png",
+                    "no_of_photo_uploaded": "25"
+                },
+                "map": {
+                    "center": {
+                        "latitude": "37.79",
+                        "longitude": "-122.4175"
+                    }
+                }
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odit, quia hic ipsam laboriosam dignissimos suscipit eligendi! Aspernatur, ad, suscipit officiis repellat consequuntur quod quibusdam sint nobis magnam voluptates veritatis?"
+        }
+    ],
+    "selectedCls": "x-btn-selected",
+    "imagePath": "assets/images/slices/[FoodieChallenge]Asset (25).png"
+}
     }
 }])
 .directive('circularProgressbar', function() {
@@ -154,4 +310,24 @@ directive('btstPane', function () {
             });
         }
     };
-});
+}).filter('makeRange', function() {
+        return function(input) {
+            var lowBound, highBound;
+            switch (input.length) {
+            case 1:
+                lowBound = 0;
+                highBound = parseInt(input[0]) - 1;
+                break;
+            case 2:
+                lowBound = parseInt(input[0]);
+                highBound = parseInt(input[1]);
+                break;
+            default:
+                return input;
+            }
+            var result = [];
+            for (var i = lowBound; i <= highBound; i++)
+                result.push(i);
+            return result;
+        };
+    });

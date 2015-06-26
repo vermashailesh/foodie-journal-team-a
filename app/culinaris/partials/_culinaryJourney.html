@@ -24,9 +24,49 @@
             <section ng-repeat="f in culinary.foods" id="accordion">
                 <div>
                     <input type="checkbox" id="{{f.id}}" />
-                    <label for="{{f.id}}"><b class="x-circle x-number">&nbsp;{{$index + 1}}&nbsp;</b>&nbsp;&nbsp;{{f.title}}</label>
+                    <label for="{{f.id}}"><a href="javascript:void(0)" class="x-circle x-number">{{$index + 1}}</a><a href="javascript:void(0)" class="x-circle-x x-number"></a>&nbsp;&nbsp;{{f.title}}</label>
                     <article>
-                        <p>{{f.description}}</p>
+                        <div class="row x-jurnal-detail">
+                            <div class="col-md-3 x-restorent">
+                                   <div class="x-restorent-name">{{f.restorents.name}}</div>
+								   <div>
+										   <img class="x-restorent-review" ng-repeat="n in [f.restorents.review_rate] | makeRange"  ng-src="assets/images/slices/Asset9.png" />
+										   <img class="x-restorent-review" ng-repeat="n in [5-f.restorents.review_rate] | makeRange"  ng-src="assets/images/slices/Asset10.png" />
+								           <span class="x-restorent-review-text">{{f.restorents.reviews}} reviews</span>
+										   
+								   </div>
+								   <div class="x-restorent-food-speciality" >$$-{{f.restorents.food_speciality}}</div>
+								   <div class="x-restorent-address">
+											<span>{{f.restorents.street}},</span>
+											<span>{{f.restorents.state}},</span>
+											<span>{{f.restorents.zip_code}}</span>
+								   </div>
+                            </div>
+                            <div class="col-md-3 x-restorent-contant">
+                                        <div class="x-restorent-working-hour" ><span><b>Today</b> </span><span class="x-time" >{{f.restorents.contacts.oprational_hour}}</span></div>
+										<div class="x-restorent-status">{{f.restorents.contacts.open_status}}</div>
+										<div class="x-restorent-hr"></div>
+										<div class="x-contact-no"><img ng-src="assets/images/slices/Asset14.png" /><a href="javascript:void(0)" class="btn btn-link"><span>({{f.restorents.contacts.phone_code}})</span><span>{{f.restorents.contacts.phone_number}}</span></a></div>
+										<div class="x-contact-no"><img ng-src="assets/images/slices/Asset13.png" /><a href="javascript:void(0)" class="btn btn-link">{{f.restorents.contacts.website}}</a></div>
+										
+							</div>
+                            <div class="col-md-3 x-restorent-photo">
+							        <div >
+							          <a href="javascript:void(0)" class="btn btn-link">
+										<img class="x-restorent-img" ng-src="{{f.restorents.photos.thumb_img}}" />
+									  </a>
+									</div>
+									<div class="x-phot-inner-text">
+									       <div><img ng-src="{{f.restorents.photos.none.png}}" /></div>
+									       <div><span>See all {{f.restorents.photos.no_of_photo_uploaded}} photos</span></div>
+									</div>
+							</div>
+                            <div class="col-md-3 x-google-map">
+                                <map center="{{f.restorents.map.center.latitude+','+f.restorents.map.center.longitude}}" zoom="{{map.zoom}}" >
+                                    <marker position="{{f.restorents.map.center.latitude+','+f.restorents.map.center.longitude}}"></marker>
+                                </map>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </section>

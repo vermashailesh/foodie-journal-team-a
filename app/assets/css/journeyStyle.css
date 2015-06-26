@@ -1,0 +1,102 @@
+
+.journeyText_a{
+    color:#FE5140;
+    font-size: 18px;
+}
+
+
+.journeyText_b{
+    color:#969696;
+    font-size: 18px;
+}
+
+.journeyTextDiv{
+    padding-top: 20px;
+    margin-top: 50px;
+}
+.task{
+    background-color: #fff;
+    'padding-top: 1%;
+    padding-bottom: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.divIntruction{
+    color: #4A4A4A;
+    padding-top: 10px;
+    font-size: 16px;
+    'font-weight: bold;
+}
+
+.divDescription{
+    color: #4A4A4A;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.divTiming{
+    background-color:#F8F8F8;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+}
+
+.divSendTextNotification,.divSendTextNotification:hover,.divSendTextNotification:focus{
+    padding-top: 20px;
+    background-color: #F8F8F8;
+    width: 25%;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding-bottom: 20px;
+    color: #94D5FD;
+    border: 0;
+}
+
+.previousStyle,.previousStyle:hover,.previousStyle:focus{
+    background-color: #555555;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    border: 0;
+    width: 50%;
+    padding-top: 15px;
+}
+
+.markStyle,.markStyle:hover,.markStyle:focus{
+    background-color: #FE5140;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    border: 0;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.nextStyle,.nextStyle:hover,.nextStyle:focus{
+    background-color: #F7F7F7;
+    color: #C6C6C6;
+    font-size: 16px;
+    height: 50px;
+    border: 0;
+    width: 50%;
+    padding-top: 15px;
+    float: right
+}
+
+.effect1{
+    -webkit-box-shadow: 0 10px 6px -6px #C4C4C4;
+    -moz-box-shadow: 0 10px 6px -6px #C4C4C4;
+    box-shadow: 0 10px 6px -6px #C4C4C4;
+}
+
+.myBadge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 6px 13px 6px 13px;
+    line-height: 1;
+    color: #fff;
+    background-color: #4A4A4A;
+    border-radius: 20px;
+}

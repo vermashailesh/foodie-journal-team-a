@@ -10,7 +10,6 @@ angular
         $scope.title = 'Welcome! Choose a track to get started.';
 
         activityService.getActivities().then(function(data) {
-            debugger;
             $scope.activities = data
         });
     }])

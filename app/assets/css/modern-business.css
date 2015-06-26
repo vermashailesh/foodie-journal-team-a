@@ -354,6 +354,18 @@ body {
     color: black;
     margin-bottom: 0;
 }
+#accordion input:checked + label .x-circle{
+  display:none;
+}
+#accordion input:checked + label .x-circle-x {
+    background-image: url(../images/slices/Asset7.png);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    color: black;
+    margin-bottom: 0;
+    background-size: contain;
+    padding: 0 0 0 16px;
+}
 #accordion article {
     background: #fff;
     height:0px;
@@ -369,7 +381,7 @@ body {
     border-bottom-left-radius: .25em;
     border-bottom-right-radius: .25em;
     height: auto;
-    margin-bottom: .125em;
+    margin-bottom: 1.125em;
 }
 .x-hr{
   border-bottom:1px solid #eeeeee;
@@ -379,17 +391,58 @@ body {
   padding:8px;
 }
 .x-circle{
-    width: 15px;
-	height: 15px;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-	background:#000;
-	color:#fff;
+    moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #000;
+    color: #fff;
+    padding: 0px 4px 0 5px;
 }
 .x-number{
   margin-left:10px;
 }
+.x-jurnal-detail{
+ }
 .x-row-accordian{
   margin:10px;
 }
+.x-google-map map{
+	height: 185px !important;
+	padding: 10px !important;
+}
+.x-restorent-name{
+   font-size: 16px;
+	font-weight: bold;
+	color: #999;
+}
+.x-restorent-review{
+  margin: 0px 0px 1px 2px;
+}
+.x-restorent{
+   padding: 7px 0 10px 34px;
+}
+.x-restorent-contant{
+	background: #F8F8F8;
+	font-size: 14px;
+	margin: 12px 0 0px 0px;
+	padding: 16px;
+ }
+ .x-restorent-status{
+   color:#449E50;
+ }
+ .x-restorent-hr{
+      border-bottom: 1px solid #999;
+	   margin: 10px 0 12px 0px;
+ }
+ .x-restorent-photo{
+   padding:6px 0 0 23px;
+ }
+ .x-restorent-img{
+   width: 228px;;
+ }
+ .x-phot-inner-text{
+	position: absolute;
+	top: 77px;
+	left: 88px;
+	color: #fff;
+ }
