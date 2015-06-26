@@ -228,12 +228,14 @@ body{
 }
 .carousel-inner {
     overflow: visible;
+
+
     width: 100%;
 }
 
-#corouseldiv{
-    width: 100%;
-}
+
+
+
 
 
 
